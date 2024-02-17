@@ -10,7 +10,7 @@
   hosts: 10.0.1.244
   become: true
   tasks:
-  - name: installing nginx on slave1
+  - name: installing nginx on slave2
     apt: name=nginx update-cache=yes state=latest
 
 
