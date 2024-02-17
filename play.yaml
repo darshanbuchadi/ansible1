@@ -1,0 +1,19 @@
+---
+- name: installing apache2 
+  hosts: 10.0.1.66
+  become: true
+  tasks:
+  - name: installing apache2 on slave1
+    apt: name=apache2 update-cache=yes state=latest
+    
+- name: installing nginx 
+  hosts: 10.0.1.244
+  become: true
+  tasks:
+  - name: installing nginx on slave1
+    apt: name=nginx update-cache=yes state=latest
+
+
+  
+
+  
