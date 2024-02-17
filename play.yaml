@@ -6,7 +6,7 @@
   - name: installing apache2 on slave1
     apt: name=apache2 update-cache=yes state=latest
     
-- name: installing nginx 
+- name: installing nginx x
   hosts: 10.0.1.244
   become: true
   tasks:
